@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  background-size:cover;
+  background-position:center;
+}
+
+body {
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: linear-gradient(to bottom, #051937, #00466d, #007aa1, #00b1cc, #12ebeb);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(246, 239, 239, 0.35);
+  align-items: center;
+  font-weight: bold;
+  padding: 20px 10%;
+  border-radius: 0 0 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+  border-bottom: 1px solid rgba(223, 223, 223, 0.55);
+  font-size: 28px;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 10px 2px;
+}
+
+.holder {
+  display: inline-flex;
+  justify-content: center;
+  margin:  0 auto;
+  width: 100%;
+}
+
+.container:first-of-type {
+  height: max-content;
+}
+
+.container {
+  color: #172849;
+  max-width: 1000px;
+  max-width: 550px;
+  margin: 10px 5px 20px;
+  border-radius: 2px;
+  background-color: rgba(246, 239, 239, 0.35);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+  border: 1px solid rgba(223, 223, 223, 0.55);
+}
+
+section {
+  padding: 10px 40px;
+}
+
+.top__menu {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+  border: 1px solid rgba(223, 223, 223, 0.55);
+  width: 95%;
+  height: auto;
+  height: 65px;
+  line-height: 65px;
+  margin: 0 auto;
+  border-radius: 2px;
+  margin: 10px auto;
+  color: #0e1522;
+}
+
+.top__menu h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.defaultButtonGroup {
+  display: block;
+  text-align: center;
+  /*justify-content: space-between;*/
+  width: 100%;
+}
+
+.links {
+  border: none;
+  padding: 0 10px;
+  color: #0e1522;
+  font-weight: bold;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.links i {
+  margin-left: 8px;
+}
+
+section .links {
+  font-size: 24px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .holder {
+    display: block !important;
+  }
+  .container {
+    margin: 10px auto 20px;
+  }
+  header {
+    margin: 0 auto;
+  }
+}
