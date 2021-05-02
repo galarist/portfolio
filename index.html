@@ -2,44 +2,114 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristovao Galambos</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+    <title>Portfolio</title>
   </head>
   <body>
-    <header>Portfolio</header>
-    <div class="holder">
-      <div class="container">
-        <div class="top__menu">
-        <div class="defaultButtonGroup">
-          <a class="links" href="">Email<i class="fas fa-envelope"></i></a>
-          <a class="links" href="https://github.com/galarist" target="_blank">GitHub<i class="fab fa-github"></i></a>
-        </div>
-        </div>
-          <div class="top__menu">
-            <h1>About Me</h1>
-          </div>
-        <section>
-          <h1>Hi there 👋! <br> My name is Cristovao Galambos</h1>
-          <h2>I enjoy designing websites, applications and everything that is front-end. Minimalism also inspires me. A nice cup of tea always help me keep in focus 🍵.
-          </h2>
-        </section>
-      </div>
-      <div class="container">
-        <div class="top__menu">
-          <h1>Projects 💻</h1>
-        </div>
-        <section>
-          <h1>ToDoPick: A to do list with a picker <br> <i class="fas fa-external-link-alt"></i> <a class="links" href="https://todopick.com" target="_blank">todopick.com</a> > HTML, CSS, JS, jQuery </h1>
-          <img src="img/work/todopick.png" alt="">
-          <h1>Hello Dribbble: A Dribbble inspired welcome message with some cool effect <br> <i class="fas fa-external-link-alt"></i> <a class="links" href="https://galarist.github.io/Hello-Dribbble/" target="_blank">Hello Dribbble!</a> > HTML, CSS</h1>
-          <img src="img/work/hellodribbble.png" alt="">
-          <h1>Tea: A tea themed responsive design <br> <i class="fas fa-external-link-alt"></i> <a class="links" href="https://galarist.github.io/tea/" target="_blank">Tea</a> > HTML, CSS</h1>
-          <img src="img/work/tea.png" alt="">
-        </section>
+    <header>
+    <a class="logo" href="/">Portfolio</a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="./">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="#contact">Contact</a>
+    <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+    <a class="close">&times;</a>
+      <div class="overlay__content">
+          <a href="./">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#">Projects</a>
+          <a href="#interests">Interests</a>
+          <a href="#contact">Contact</a>
       </div>
     </div>
+    <div class="bgimg-1">
+      <div class="caption centered">
+        <span class="border">
+          <h2>Hi 👋! <br>I am Cristovao Luis Galambos
+          </h2>
+        </span>
+          <div class="container__animation">
+            <div class="shape"></div>
+          </div>
+      </div>
+    </div>
+    <!--===== ABOUT =====-->
+    <div id="about" class="empty__space"></div>
+    <section class="about section " >
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="assets/img/about.jpg" alt="">
+            </div>
+            <div>
+              <h3>I enjoy designing websites, applications and everything that is front-end.
+                Minimalism also inspires me. <br> A nice cup of tea always help me keep in focus 🍵.</h3>
+            </div>
+        </div>
+    </section>
+    <!--===== EXPERIENCE =====-->
+    <div id="experience" class="empty__space"></div>
+    <section class="experience section " id="experience">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="assets/img/about.jpg" alt="">
+            </div>
+            <div>
+            </div>
+        </div>
+    </section>
+    <!--===== INTERESTS =====-->
+    <div id="interests" class="empty__space"></div>
+    <section class="interests section " id="interests">
+        <h2 class="section-title">Interests</h2>
+
+        <div class="about__container bd-grid">
+          <ul>
+            <li>Minimalism</li>
+            <li>GO Boardgame</li>
+            <li>Art</li>
+            <li>Mindfulness</li>
+            <li>Self-Growth</li>
+            <li>Reading</li>
+            <li>Some Games</li>
+          </ul>
+        </div>
+    </section>
+    <div id="contact" class="empty__space"></div>
+    <div class="container">
+    <h2 class="section-title">Contact</h2>
+      <form action="#" name="contact_form">
+        <label for="first_name">First Name</label>
+        <input name="first_name" type="text" required placeholder="John"/>
+        <br>
+        <label for="last_name">Last Name</label>
+        <input name="last_name" type="text" required placeholder="Doe"/>
+        <br>
+        <label for="email">Email</label>
+        <input name="email" type="email" required placeholder="you@domain.com"/>
+        <br>
+        <label for="message">Message</label><br>
+        <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+        <div class="center">
+        <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="js/functions.js"></script>
   </body>
 </html>
