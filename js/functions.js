@@ -9,3 +9,8 @@ menuOpen.addEventListener("click", () => {
 menuClose.addEventListener("click", () => {
   overlay.classList.remove("overlay--active");
 });
+$('.overlay').on('click', function(e) {
+  $('.overlay__content a').each(function(index) {
+    overlay.classList.remove("overlay--active");
+  });
+});
