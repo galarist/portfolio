@@ -228,14 +228,59 @@ header {
   position: relative;
 }
 
-.section ul {
+.ul__table {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#interests.section ul {
   margin: 0 auto;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  text-align: center;
+}
+
+.date {
+  color: #3F5170;
+  font-weight: bold;
+  border-left: 2px dotted #3F5170;
+  border-right: 2px dotted #3F5170;
+  padding: 0 5px;
+}
+
+@media only screen and (max-width: 520px) {
+#interests.section ul {
+    margin: 0 auto;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+#interests.section ul {
+    margin: 0 auto;
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    text-align: center;
+  }
 }
 
 .section li {
   font-weight: bold;
-  margin-bottom: 8px;
-  list-style-type: square;
+  margin-bottom: 10px;
+  list-style-type: none;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+hr {
+  border: 1px solid #3F5170;
+  border-radius: 3px;
 }
 
 h1 {
@@ -243,7 +288,7 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 8px !important;
+  margin-bottom: 10px !important;
 }
 
 /* ===== ABOUT =====*/
@@ -263,12 +308,13 @@ h2 {
 
 /* Add styles to 'container' class */
 .container {
-	margin: 20px auto 15px;
+	margin: 20px auto 0;
   border-radius: 3px;
   border-right: 5px solid #3F5170;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   padding: 30px 10%;
   max-width: 80%;
+  padding-bottom: 15px;
 }
 
 /* Add styles to 'label' selector */
@@ -328,7 +374,7 @@ input[type=submit]:hover {
 
 :root {
   --background: #005;
-  --primary: #8a9693;
+  --primary: #8EB0B8;
   --secondary: #3F5170;
   --third: #e27fcb;
 }
