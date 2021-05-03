@@ -28,6 +28,7 @@ body, html {
 
 }
 .bgimg-1 {
+  padding-top: 155px;
   min-height: 100%;
 }
 
@@ -73,21 +74,21 @@ header {
   position: fixed;
   width: 100%;
   background-color: #e2e2e2;
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo {
   margin-right: auto;
 }
 
-.nav__links {
+.nav__links, .social__links {
   list-style: none;
   display: flex;
 }
 
 .nav__links a,
 .cta, .logo,
-.overlay__content a {
+.overlay__content a, .social__links a {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   color: #edf0f1;
@@ -101,7 +102,7 @@ header {
     color: #e2e2e2;
 }
 
-.nav__links li {
+.nav__links li, .social__links  li {
   padding: 0px 20px;
 }
 
@@ -109,7 +110,7 @@ header {
   /*transition: all 0.3s ease 0s;*/
 }
 
-.nav__links li a:hover {
+.nav__links li a:hover, .social__links li a:hover {
   border-bottom: 2px solid #3F5170;
 }
 
@@ -141,7 +142,7 @@ header {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   left: 0;
   top: 0;
   background-color: #161616;
@@ -192,6 +193,12 @@ header {
   }
 }
 
+@media screen and (max-width: 450px)  {
+  .section .ul__table {
+    display: block !important;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   .nav__links,
   .cta {
@@ -200,6 +207,18 @@ header {
   .menu {
     display: initial;
   }
+}
+
+.social__links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12pt;
+  position: absolute;
+  width: 100%;
+  margin-top: 95px;
+  z-index: 1;
+  padding-right: 10%;
 }
 
 .empty__space {
