@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
     <title>Cristovao Galambos | Portfolio</title>
@@ -15,12 +16,11 @@
       <ul class="nav__links">
         <li><a href="./">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#experience&Knowledge">Exp & Knwl</a></li>
+        <li><a href="#experience">Exp</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#interests">Interests</a></li>
       </ul>
     </nav>
-    <a class="cta" href="#contact">Contact</a>
+    <a class="cta" href="mailto:galamboscristovao@gmail.com">Contact</a>
     <p class="menu cta">Menu</p>
     </header>
     <div id="mobile__menu" class="overlay">
@@ -28,10 +28,9 @@
       <div class="overlay__content">
           <a href="./">Home</a>
           <a href="#about">About</a>
-          <a href="#experience&Knowledge">Exp & Knwl</a>
+          <a href="#experience">Exp</a>
           <a href="#projects">Projects</a>
-          <a href="#interests">Interests</a>
-          <a href="#contact">Contact</a>
+          <a href="mailto:galamboscristovao@gmail.com">Contact</a>
       </div>
     </div>
     <div class="social__links">
@@ -61,10 +60,10 @@
             </div>
         </div>
     </section>
-    <!--===== EXPERIENCE & KNOWLEDGE =====-->
-    <div id="experience&Knowledge" class="empty__space"></div>
-    <section class="experience section " id="experience&Knowledge">
-        <h2 class="section-title">Experience & Knowledge</h2>
+    <!--===== EXPERIENCE =====-->
+    <div id="experience" class="empty__space"></div>
+    <section class="experience section " id="experience">
+        <h2 class="section-title">Experience</h2>
         <div class="ul__table">
           <div class="">
             <ul>
@@ -75,24 +74,6 @@
               <span class="date">2015 - Present</span><li>Self-projects</li>
             </ul>
           </div>
-          <div class="">
-            <ul>
-              <li> <h2>Knowledge</h2> </li>
-              <li>GIT</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JS</li>
-              <li>jQuery</li>
-              <li>AJAX</li>
-              <li>PHP</li>
-              <li>MySQL</li>
-              <li>Linux</li>
-              <li>Windows 10</li>
-              <li>Windows 7</li>
-              <li>Splank</li>
-              <li>WireShark</li>
-            </ul>
-          </div>
         </div>
     </section>
     <!--===== PROJECTS =====-->
@@ -101,36 +82,28 @@
         <h2 class="section-title">Projects</h2>
 
         <div class="about__container bd-grid">
-            <div class="about__img">
-                <img src="" alt="">
-            </div>
-            <div>
-            </div>
+        <div class="desc">
+          <h2> <a target="_blank" href="https://todopick.com">ToDoPick <i class="fas fa-external-link-alt"></i></a> </h2>
+          <p>A To Do List with a picker.</p>
         </div>
-    </section>
-    <!--===== INTERESTS =====-->
-    <div id="interests" class="empty__space"></div>
-    <section class="interests section " id="interests">
-        <h2 class="section-title">Interests</h2>
-
+          <div class="thumbnail__img">
+              <img src="img/projects/todopick.png" alt="">
+          </div>
+        </div>
         <div class="about__container bd-grid">
-          <ul>
-            <li>Minimalism</li>
-            <li>Mindfulness</li>
-            <li>Meditation</li>
-            <li>Art</li>
-            <li>Photography</li>
-            <li>Reading</li>
-            <li>Self-Growth</li>
-            <li>GO Boardgame</li>
-            <li>Some Games</li>
-          </ul>
+          <div class="desc">
+            <h2>Tea - In Progress</h2>
+            <p>Tea themed responsive design</p>
+          </div>
+          <div class="thumbnail__img">
+              <img src="img/projects/tea.png" alt="">
+          </div>
         </div>
     </section>
-    <div id="contact" class="empty__space"></div>
+    <!--<div id="contact" class="empty__space"></div>
     <div class="container">
     <h2 class="section-title">Contact</h2>
-      <form action="#" name="contact_form">
+      <form action="mailto:galamboscristovao@gmail.com" method="POST" name="contact_form">
         <label for="first_name">First Name</label>
         <input name="first_name" type="text" required placeholder="John"/>
         <br>
@@ -143,7 +116,7 @@
         <input type="submit" value="Submit">
         </div>
       </form>
-    </div>
+    </div>-->
     <div id="" class="empty__space"></div>
     <script type="text/javascript" src="js/functions.js"></script>
   </body>

@@ -205,6 +205,21 @@ header {
   }
 }
 
+@media screen and (max-width: 720px)  {
+  .about__container {
+    display: block !important;
+  }
+  .thumbnail__img img{
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .desc {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 450px)  {
   .section .ul__table {
     display: block !important;
@@ -220,6 +235,27 @@ header {
     display: initial;
   }
 }
+
+@media only screen and (max-width: 520px) {
+#interests.section ul {
+    margin: 0 auto;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+#interests.section ul {
+    margin: 0 auto;
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    text-align: center;
+  }
+}
+
 
 .social__links {
   display: flex;
@@ -295,26 +331,6 @@ header {
   padding: 0 5px;
 }
 
-@media only screen and (max-width: 520px) {
-#interests.section ul {
-    margin: 0 auto;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-#interests.section ul {
-    margin: 0 auto;
-    columns: 1;
-    -webkit-columns: 1;
-    -moz-columns: 1;
-    text-align: center;
-  }
-}
-
 .section li {
   font-weight: bold;
   margin-bottom: 10px;
@@ -340,16 +356,36 @@ h2 {
 /* ===== ABOUT =====*/
 .about__container{
   row-gap: 2rem;
-  text-align: left;
+  display: flex;
+  justify-content:  space-around;
+  margin: 10px 10px;
 }
+
 .about__subtitle{
 }
+
 .about__img{
   justify-self: center;
 }
-.about__img img{
-  width: 200px;
+
+.about__img img, .thumbnail__img img{
+  max-width: 400px;;
   border-radius: .5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.thumbnail__img, .desc {
+  margin: 0 10px;
+}
+
+.desc a {
+  color: #161616;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.desc {
+  margin-bottom: 10px;
 }
 
 /* Add styles to 'container' class */
