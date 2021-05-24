@@ -490,3 +490,44 @@ input[type=submit]:hover {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+
+.cards {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+ }
+
+.card {
+    box-sizing: border-box;
+    margin: 1rem;
+    color: #e2e2e2 !important;
+    background-color: #3F5170;
+    position: relative;
+    clear:both;
+    padding: 10px;
+    flex-direction: column;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    display: flex;
+    border-radius: 3px;
+    flex-direction: column
+}
+
+.card a {
+  color: #e2e2e2 !important;
+  text-decoration: none;
+}
+
+.links {
+  font-size: 24px !important;
+  position: absolute;
+  bottom: 8px;
+}
+
+.fa-github:before {
+    content: "\f09b";
+    font-size: larger;
+}
