@@ -358,6 +358,7 @@ h2 {
   row-gap: 2rem;
   display: flex;
   justify-content:  space-around;
+  justify-content:  center;
   margin: 10px 10px;
 }
 
