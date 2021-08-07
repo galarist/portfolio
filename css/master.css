@@ -16,22 +16,29 @@ body {
 
 body, html {
   height: 100%;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 55%;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
-  opacity: 0.6;
+  opacity: 1;
   position: relative;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-image: url('/img/svg/undraw_portfolio_website_lidw.svg');
 }
+
 .bgimg-1 {
   padding-top: 155px;
   min-height: 100%;
 }
-
 
 .caption span.border h2 {
   animation-name: floating;
@@ -42,6 +49,17 @@ body, html {
   margin-bottom: 0 !important;
   line-height: 1.2em;
   padding: 55px 0;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
 }
 
 @keyframes floating {
@@ -123,13 +141,13 @@ header {
 }
 
 .nav__links li a:hover, .social__links li a:hover {
-  border-bottom: 2px solid #3F5170;
+  border-bottom: 2px solid var(--secondary);
 }
 
 .cta {
   margin-left: 20px;
   padding: 8px 25px;
-  background-color: #3F5170;
+  background-color: var(--secondary);
   height: 35px;
   color: #d6d6d6;
   color: #e2e2e2;
@@ -183,14 +201,14 @@ header {
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #8EB0B8;
+  color: var(--secondary);
 }
 .overlay .close {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
-  color: #8EB0B8;
+  color: var(--secondary);
   cursor: pointer;
 }
 
@@ -267,6 +285,9 @@ header {
   margin-top: 95px;
   z-index: 1;
   padding-right: 10%;
+  height: 35px;
+  position: fixed;
+  background-color: #e2e2e2
 }
 
 .empty__space {
@@ -282,7 +303,7 @@ header {
   text-align: center;
 }
 
-.section-title::after{
+.section-title::after {
   position: absolute;
   content: "";
   width: 64px;
@@ -294,18 +315,20 @@ header {
   background-color: ;
 }
 
-.section{
+.section {
   padding-top: 3rem;
   padding-bottom: 2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   max-width: 80%;
   padding: 30px 10%;
-  border-right: 2px dotted #3F5170;
+  /*border-right: 2px dotted var(--secondary);*/
+  border: 2px solid rgba(61, 156, 74, 0.4);
   border-radius: 3px;
   margin: 0 auto 50px;
   background-color: #e2e2e2 !important;
   position: relative;
+  margin-top: 46px;
   /*height: 89%;*/
 }
 
@@ -324,10 +347,10 @@ header {
 }
 
 .date {
-  color: #3F5170;
+  color: var(--secondary);
   font-weight: bold;
-  border-left: 2px dotted #3F5170;
-  border-right: 2px dotted #3F5170;
+  border-left: 2px dotted var(--secondary);
+  border-right: 2px dotted var(--secondary);
   padding: 0 5px;
 }
 
@@ -351,6 +374,11 @@ h1 {
 
 h2 {
   margin-bottom: 10px !important;
+  color: var(--secondary);
+}
+
+h3 {
+  text-align: center;
 }
 
 /* ===== ABOUT =====*/
@@ -393,7 +421,7 @@ h2 {
 .container {
 	margin: 20px auto 0;
   border-radius: 3px;
-  border-right: 2px dotted #3F5170;
+  border-right: 2px dotted var(--secondary);
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 30px 10%;
@@ -459,7 +487,9 @@ input[type=submit]:hover {
 :root {
   --background: #005;
   --primary: #8EB0B8;
+  --primary: #3e9c4b;
   --secondary: #3F5170;
+  --secondary: #3e9c4b;
   --third: #e27fcb;
 }
 
@@ -478,6 +508,7 @@ input[type=submit]:hover {
   height: 350px;
   transition: all 1s ease-in-out;
   width: 370px;
+  opacity: 0.8;
 }
 
 @keyframes morph {
@@ -503,18 +534,19 @@ input[type=submit]:hover {
     box-sizing: border-box;
     margin: 1rem;
     color: #e2e2e2 !important;
-    background-color: #3F5170;
+    background-color: var(--secondary);
     position: relative;
     clear:both;
     padding: 10px;
     flex-direction: column;
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     display: flex;
     border-radius: 3px;
-    flex-direction: column
+    flex-direction: column;
+    font-weight: 800;
 }
 
 .card a {
