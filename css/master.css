@@ -3,8 +3,8 @@
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
   box-sizing: border-box;
-  background-size:cover;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
 }
 
 body {
@@ -49,8 +49,10 @@ img {
   margin-bottom: 0 !important;
   line-height: 1.2em;
   padding: 55px 0;
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
@@ -63,15 +65,24 @@ img {
 }
 
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
-.first__letter::first-letter{
-   text-decoration: underline;
-   font-weight: bold;
+.first__letter::first-letter {
+  text-decoration: underline;
+  font-weight: bold;
 }
+
 .first__letter {
   display: inline-block !important;
 }
@@ -91,6 +102,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 /*MENU*/
 header {
   display: flex;
@@ -128,11 +140,11 @@ header {
 }
 
 .overlay__content a {
-    color: #d6d6d6;
-    color: #e2e2e2;
+  color: #d6d6d6;
+  color: #e2e2e2;
 }
 
-.nav__links li, .social__links  li {
+.nav__links li, .social__links li {
   padding: 0px 20px;
 }
 
@@ -203,6 +215,7 @@ header {
 .overlay a:focus {
   color: var(--secondary);
 }
+
 .overlay .close {
   position: absolute;
   top: 20px;
@@ -216,6 +229,7 @@ header {
   .overlay a {
     font-size: 20px;
   }
+
   .overlay .close {
     font-size: 40px;
     top: 15px;
@@ -223,11 +237,12 @@ header {
   }
 }
 
-@media screen and (max-width: 720px)  {
+@media screen and (max-width: 720px) {
   .about__container {
     display: block !important;
   }
-  .thumbnail__img img{
+
+  .thumbnail__img img {
     width: 100%;
     border-radius: .5rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -238,7 +253,7 @@ header {
   }
 }
 
-@media screen and (max-width: 450px)  {
+@media screen and (max-width: 450px) {
   .section .ul__table {
     display: block !important;
   }
@@ -249,13 +264,23 @@ header {
   .cta {
     display: none;
   }
+
   .menu {
     display: initial;
+  }
+
+  .eduList {
+    display: block !important;
+    text-align: center;
+  }
+
+  .eduList img {
+    width: 40% !important;
   }
 }
 
 @media only screen and (max-width: 520px) {
-#interests.section ul {
+  #interests.section ul {
     margin: 0 auto;
     columns: 2;
     -webkit-columns: 2;
@@ -265,7 +290,7 @@ header {
 }
 
 @media only screen and (max-width: 300px) {
-#interests.section ul {
+  #interests.section ul {
     margin: 0 auto;
     columns: 1;
     -webkit-columns: 1;
@@ -273,7 +298,6 @@ header {
     text-align: center;
   }
 }
-
 
 .social__links {
   display: flex;
@@ -295,7 +319,7 @@ header {
 }
 
 /*===== CLASS CSS ===== */
-.section-title{
+.section-title {
   position: relative;
   color: var(--first-color);
   margin-top: var(--mb-2);
@@ -321,7 +345,7 @@ header {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   max-width: 80%;
-  padding: 30px 10%;
+  padding: 30px 2% 10px;
   /*border-right: 2px dotted var(--secondary);*/
   border: 2px solid rgba(61, 156, 74, 0.4);
   border-radius: 3px;
@@ -344,6 +368,25 @@ header {
   -webkit-columns: 3;
   -moz-columns: 3;
   text-align: center;
+}
+
+.eduList {
+  border: 2px solid rgba(61, 156, 74, 0.4);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eduList div:first-of-type {
+  width: 100%;
+}
+
+.eduList img {
+  width: 45%;
 }
 
 .date {
@@ -382,23 +425,23 @@ h3 {
 }
 
 /* ===== ABOUT =====*/
-.about__container{
+.about__container {
   row-gap: 2rem;
   display: flex;
-  justify-content:  space-around;
-  justify-content:  center;
+  justify-content: space-around;
+  justify-content: center;
   margin: 10px 10px;
 }
 
-.about__subtitle{
-}
+.about__subtitle {}
 
-.about__img{
+.about__img {
   justify-self: center;
 }
 
-.about__img img, .thumbnail__img img{
-  max-width: 400px;;
+.about__img img, .thumbnail__img img {
+  max-width: 400px;
+  ;
   border-radius: .5rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -419,7 +462,7 @@ h3 {
 
 /* Add styles to 'container' class */
 .container {
-	margin: 20px auto 0;
+  margin: 20px auto 0;
   border-radius: 3px;
   border-right: 2px dotted var(--secondary);
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
@@ -431,26 +474,26 @@ h3 {
 
 /* Add styles to 'label' selector */
 label {
-	font-size:  22px;
+  font-size: 22px;
   font-weight: bold;
   color: #111;
 }
 
 /* Add styles to 'input' and 'textarea' selectors */
-input[type=text],input[type=email], textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 /* Add styles to show 'focus' of selector */
-input[type=text]:focus,input[type=email]:focus, textarea:focus {
-	border: 1px solid green;
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  border: 1px solid green;
 }
 
 /* Add styles to the submit button */
@@ -470,18 +513,18 @@ input[type=submit] {
 
 /* Add styles for 'focus' property */
 input[type=submit]:focus {
-	background: rgb(17, 17, 17);
-	color: whitesmoke;
+  background: rgb(17, 17, 17);
+  color: whitesmoke;
 }
 
 /* Style 'hover' property */
 input[type=submit]:hover {
-	background: #2196F3;
+  background: #2196F3;
 }
 
 /* Align items to center of the 'div' with the class 'center' */
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 :root {
@@ -515,9 +558,11 @@ input[type=submit]:hover {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
+
   50% {
     border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
   }
+
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
@@ -528,25 +573,25 @@ input[type=submit]:hover {
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
- }
+}
 
 .card {
-    box-sizing: border-box;
-    margin: 1rem;
-    color: #e2e2e2 !important;
-    background-color: var(--secondary);
-    position: relative;
-    clear:both;
-    padding: 10px;
-    flex-direction: column;
-    position: relative;
-    width: 180px;
-    height: 180px;
-    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-    display: flex;
-    border-radius: 3px;
-    flex-direction: column;
-    font-weight: 800;
+  box-sizing: border-box;
+  margin: 1rem;
+  color: #e2e2e2 !important;
+  background-color: var(--secondary);
+  position: relative;
+  clear: both;
+  padding: 10px;
+  flex-direction: column;
+  position: relative;
+  width: 180px;
+  height: 180px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  display: flex;
+  border-radius: 3px;
+  flex-direction: column;
+  font-weight: 800;
 }
 
 .card a {
@@ -561,6 +606,6 @@ input[type=submit]:hover {
 }
 
 .fa-github:before {
-    content: "\f09b";
-    font-size: larger;
+  content: "\f09b";
+  font-size: larger;
 }
