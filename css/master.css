@@ -19,6 +19,29 @@ body, html {
   scroll-behavior: smooth;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #3e9c4b;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e2e2e2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  background-color: #3e9c4b;
+  border-radius: 23px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(142, 176, 184);
+}
+
 img {
   width: 55%;
   display: block;
@@ -360,6 +383,8 @@ header {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 #interests.section ul {
