@@ -172,7 +172,7 @@ header {
 }
 
 .social__links li {
-  padding: 0 5px;
+  padding: 0 8px;
 }
 
 .nav__links li a {
@@ -329,6 +329,7 @@ header {
 .social__links {
   display: flex;
   justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   font-size: 12pt;
   position: absolute;
