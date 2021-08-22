@@ -336,8 +336,7 @@ header {
   width: 100%;
   margin-top: 95px;
   z-index: 1;
-  padding-right: 10%;
-  height: 35px;
+  height: 40px;
   position: fixed;
   background-color: #e2e2e2
 }
