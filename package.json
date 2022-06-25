@@ -4,9 +4,12 @@
     "browserslist": "> 0.5%, last 2 versions, not dead",
     "scripts": {
         "start": "parcel --open",
-        "build": "parcel build"
+        "build": "parcel build",
+        "predeploy": "rm -rf dist && parcel build --no-source-maps --public-url ./",
+        "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
+        "gh-pages": "^4.0.0",
         "parcel": "^2.6.0",
         "process": "^0.11.10"
     },
