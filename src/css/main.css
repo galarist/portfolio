@@ -190,15 +190,17 @@ article h2 p {
     }
 }
 
+.container__scroll {
+    display: flex;
+    justify-content: center;
+}
+
 .scroll__down {
-    display: block;
+    position: absolute;
     width: 30px;
     height: 30px;
-    position: absolute;
-    left: 50%;
     bottom: 50px;
     z-index: 9;
-    transform: translate(-50%, -50%);
     border-bottom: 2px solid var(--color);
     border-right: 2px solid var(--color);
     border-radius: var(--border);

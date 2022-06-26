@@ -18,7 +18,9 @@ export default function About () {
                 <div className="container__animation">
                     <div className="shape"></div>
                 </div>
-                <div className="scroll__down"></div>
+                <div className="container__scroll">
+                    <div className="scroll__down"></div>
+                </div>
             </article>
             <article>
                 <header>
