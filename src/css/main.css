@@ -300,6 +300,8 @@ article {
 
 article header {
     border-radius: var(--border);
+    font-weight: bold;
+    color: #e9e8e8;
 }
 
 .react-tabs article .grid div {
@@ -372,6 +374,12 @@ article:last-of-type {
     font-size: 1.25rem;
 }
 
+#skills+article>.wrapperGrid {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
 #education+article>.grid,
 #skills+article>.grid {
     display: flex !important;
@@ -382,16 +390,12 @@ article:last-of-type {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 185px;
+    margin: 0 auto;
 }
 
 #skills+article>.grid div {
     width: fit-content;
-}
-
-#skills+article>.wrapperGrid {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
 }
 
 .eduList {
@@ -481,7 +485,6 @@ footer {
         display: initial;
     }
 }
-
 
 /* Big screen devices (889px and above) */
 @media only screen and (min-width: 889px) {
