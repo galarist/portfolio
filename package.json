@@ -1,0 +1,44 @@
+{
+    "name": "index",
+    "source": "src/index.html",
+    "browserslist": "> 0.5%, last 2 versions, not dead",
+    "scripts": {
+        "start": "parcel ./src/index.html",
+        "prebuild-dev": "shx rm -rf dist/*",
+        "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
+        "prebuild": "shx rm -rf dist/*",
+        "build": "parcel build ./src/index.html --public-url ./",
+        "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+    },
+    "homepage": "https://www.galarist.com/",
+    "devDependencies": {
+        "gh-pages": "^4.0.0",
+        "parcel": "^2.6.0",
+        "process": "^0.11.10",
+        "shx": "^0.3.2"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free-brands": "^5.0.13",
+        "@fortawesome/fontawesome-svg-core": "^6.1.1",
+        "@fortawesome/free-brands-svg-icons": "^6.1.1",
+        "@fortawesome/free-regular-svg-icons": "^6.1.1",
+        "@fortawesome/free-solid-svg-icons": "^6.1.1",
+        "@fortawesome/react-fontawesome": "^0.1.18",
+        "@parcel/compressor-brotli": "^2.6.0",
+        "@parcel/compressor-gzip": "^2.6.0",
+        "@picocss/pico": "^1.5.2",
+        "@react-hook/copy": "^2.0.1",
+        "babel-plugin-macros": "^3.1.0",
+        "nodemailer": "^6.7.5",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-tabs": "^4.2.1",
+        "react-tooltip": "^4.2.21",
+        "react-type-animation": "^1.1.3"
+    },
+    "version": "1.0.0",
+    "description": "showcase my portfolio",
+    "author": "Cristovao Galambos",
+    "license": "MIT",
+    "private": true
+}
